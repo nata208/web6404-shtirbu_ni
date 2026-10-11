@@ -27,3 +27,5 @@
 - `lab2/collections.html` — коллекции бренда
 - `lab2/table.html` — таблица «Иконы стиля»
 - `lab2/beauty.html` — парфюмерия и косметика
+- `lab2/style.css` — файл стилей 
+- `lab2/images/` — папка с изображениями
