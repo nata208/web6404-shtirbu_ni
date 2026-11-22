@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce &amp; Gabbana - Вход и подписка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="collections.html" class="nav__link">Коллекции</a>
+        <a href="table.html" class="nav__link">Иконы стиля</a>
+        <a href="beauty.html" class="nav__link">Красота</a>
+        <a href="auth.html" class="nav__link nav__link--active">Клуб D&amp;G</a>
+    </nav>
+
+    <main class="content-block">
+        <h1 class="page-title">Клуб Dolce &amp; Gabbana</h1>
+
+        <form class="form-card" id="dg-form">
+            <div class="form-card__group">
+                <label for="login-input" class="form-card__label">Логин или E-mail</label>
+                <input type="text" id="login-input" name="login" class="form-card__input" placeholder="guest@example.com" required>
+            </div>
+
+            <div class="form-card__group">
+                <label for="password-input" class="form-card__label">Пароль</label>
+                <input type="password" id="password-input" name="password" class="form-card__input" placeholder="Введите пароль" required>
+            </div>
+
+            <div class="form-card__group">
+                <label for="direction-select" class="form-card__label">Интересующее направление</label>
+                <select id="direction-select" name="direction" class="form-card__select">
+                    <option value="Alta Moda">Alta Moda</option>
+                    <option value="Ready-to-Wear">Ready-to-Wear</option>
+                    <option value="Beauty">Beauty и ароматы</option>
+                </select>
+            </div>
+
+            <div class="form-card__group">
+                <label class="form-card__checkbox-label">
+                    <input type="checkbox" id="consent-checkbox" name="consent" required>
+                    <span>Согласен на обработку персональных данных</span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn" id="submit-btn">Отправить данные </button>
+            <p class="form-card__status" id="form-status" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Dolce &amp; Gabbana</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
